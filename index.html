@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+    <!-- Importing a modern Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Vibrant Gradient Background */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            /* Enhanced Rounded Corners */
+            border-radius: 25px;
+            /* Deep, Soft Shadow for Elevation */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            max-width: 380px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            object-fit: cover;
+            background-color: #eee;
+            margin-bottom: -115px; /* Pull the image down into the content area */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .profile-content {
+            padding: 80px 30px 40px;
+        }
+
+        .student-name {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .student-stream {
+            font-size: 1.1rem;
+            color: #764ba2;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .short-bio {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .profile-footer {
+            border-top: 1px solid #f0f0f0;
+            padding-top: 25px;
+        }
+
+        .contact-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+            filter: brightness(1.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 400px) {
+            .profile-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
+        </div>
+        <div class="profile-content">
+            <h2 class="student-name">H.A.S.T.Hettiarachchi</h2>
+            <h3 class="student-stream">Computer Science</h3>
+            <p class="short-bio">
+                H.A.S.T.Hettiarachchi is a dedicated Computer Science student with a passion for software development and artificial intelligence. They enjoy solving complex problems and are constantly seeking to expand their technical expertise through hands-on projects.
+            </p>
+            <div class="profile-footer">
+                <button class="contact-btn">Get In Touch</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
